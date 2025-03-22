@@ -44,6 +44,18 @@
        url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* Navbar background change on scroll */
+  .navbar {
+        transition: background-color 0.1s ease;
+      }
+
+    .navbar.scrolled {
+      background-color: white !important;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    body {
+          padding-top: 115px; /* Adjust this value based on your navbar height */
+        }
 
 </style>
 
@@ -99,15 +111,15 @@
       <div class="w-100 overflow-hidden bg-gray-100" id="top">
   
 <div class="container position-relative">
-  <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/frontneurodent.webp);">
+  <!-- <div class="col-12 col-lg-8 mt-0 h-100 position-absolute top-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/webp/frontneurodent.webp);">
     
-  </div>
+  </div> -->
     <div class="row">
 
 <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
   <h1 class="display-1 fw-bold mt-5">Bienvenido a Neurodent</h1>
   <p class="lead">Centro de Especialidades</p>
-  <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Contáctanos</a>
+  <a href="#contactus" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5">Contáctanos</a>
 </div>
 
 
@@ -127,7 +139,7 @@
   <span class="h5 fw-lighter">01.</span>
   <h3 class="py-5 border-top border-dark">Neurocirugía</h3>
   <p>La neurocirugía se enfoca en diagnosticar y tratar condiciones que afectan el cerebro, la columna vertebral y el sistema nervioso. Nuestros expertos neurocirujanos brindan atención avanzada para problemas como hernias discales, estenosis espinal, tumores cerebrales y traumas neurológicos. Utilizando tecnología de vanguardia, garantizamos tratamientos precisos y efectivos para mejorar tu calidad de vida.</p>
-  <a href="#" class="link-fancy">Más información
+  <a href="https://es.wikipedia.org/wiki/Neurocirug%C3%ADa" class="link-fancy">Más información
   </a>
 </div>
 
@@ -135,7 +147,7 @@
   <span class="h5 fw-lighter">02.</span>
   <h3 class="py-5 border-top border-dark">Periodoncia</h3>
   <p>La periodoncia es la rama de la odontología dedicada a la salud de tus encías y las estructuras que sostienen tus dientes. Nuestros periodoncistas se especializan en el tratamiento de enfermedades de las encías, realización de injertos gingivales y colocación de implantes dentales. Nos comprometemos a preservar tu sonrisa y asegurar la salud a largo plazo de tus dientes y encías.</p>
-  <a href="#" class="link-fancy">Más información
+  <a href="https://es.wikipedia.org/wiki/Periodoncia" class="link-fancy">Más información
   </a>
 </div>
 
@@ -145,7 +157,7 @@
   <p>La odontología estética combina arte y ciencia para mejorar la apariencia de tu sonrisa. Nuestros dentistas cosméticos ofrecen tratamientos principalmente de blanqueamiento dental. Ya sea que busques corregir imperfecciones o lograr una sonrisa radiante, te brindamos soluciones personalizadas para que aumentes tu seguridad.
 
   </p>
-  <a href="#" class="link-fancy">Más información
+  <a href="https://es.wikipedia.org/wiki/Odontolog%C3%ADa_est%C3%A9tica#:~:text=Se%20podr%C3%ADa%20definir%20la%20odontolog%C3%ADa,belleza%20en%20forma%20de%20sonrisa." class="link-fancy">Más información
   </a>
 </div>
 </div>
@@ -170,11 +182,15 @@
   </div>
 </div>
 <div class="col-lg-4">
-  <h3 class="py-5 border-top border-dark" data-aos="fade-left">Conoce nuestro equipo de especialistas.</h3>
-  <p data-aos="fade-left" data-aos-delay="200">asdasd.
+  <h3 class="py-5 border-top border-dark" data-aos="fade-left">Conoce nuestro equipo de especialistas</h3>
+  <p data-aos="fade-left" data-aos-delay="200">
   </p>
-  <p>
-    <a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Link cada uno??
+  <p align="center">
+    <a href="drpavez.html" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Dr. Alonso Pavez
+    </a>
+  </p>
+  <p align="center">
+    <a href="#" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="400">Dra. Rossana Vásquez
     </a>
   </p>
 </div>
@@ -196,11 +212,11 @@
     </div>
     <div class="col-lg-8" data-aos="fade-up">
       <div class="display-1 fw-bold py-4">+20 años</div>
-      <p class="text-black-50">Desde la fundación de Neurodent como centro de especialidades médicas. A través de esta larga travesía, muchos pacientes y sus respectivas familias han confiado su salud en el Dr. Pavez y Dra. Vásquez. </p>
+      <p class="text-black-50">Desde la fundación de Neurodent como centro de especialidades médicas. A través de esta larga travesía, muchos pacientes y sus respectivas familias han confiado su salud en el Dr. Pavez y en la Dra. Vásquez. </p>
     </div>
     <div class="col-lg-8" data-aos="fade-up">
       <div class="display-1 fw-bold py-4">+30 años</div>
-      <p class="text-black-50">De experiencia en cada uno de los especialistas dentro de su rama. </p>
+      <p class="text-black-50">De experiencia en cada uno de los especialistas dentro de su rama. Esta forjada en más de 5 ciudades distintas del territorio nacional, principalmente en el sector público. </p>
     </div>
   </div>
 </div>
@@ -214,24 +230,13 @@
   <div class="row overflow-scroll">
     <div class="col-12">
       <div class="row vw-100 px-0 py-vh-5 d-flex align-items-center scrollx">
-        <div class="col-md-2" data-aos="fade-up">
-            <img src="img/webp/neurodent_front2.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="200">
-            <img src="img/webp/neurodent_front3.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="1164" height="776">
-        </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
-            <img src="img/webp/neurodent_sala1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
+            <img src="img/webp/neurodent_front3.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="1054">
         </div>
 
         <div class="col-md-3" data-aos="fade-up" data-aos-delay="600">
-            <img src="img/webp/neurodent_sala_estadio.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
-        </div>
-
-        <div class="col-md-2" data-aos="fade-up" data-aos-delay="800">
-            <img src="img/webp/neurodent_pabellon.webp" class="rounded shadow img-fluid" alt="nice gallery image" width="512" height="341">
+            <img src="img/webp/neurodent_sala1.webp" class="img-fluid rounded shadow" alt="nice gallery image" width="844" height="562">
         </div>
       </div>
     </div>
@@ -247,7 +252,7 @@
 </div>
 <div class="col-md-7" data-aos="fade-left">
   <blockquote>
-    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3"> Contáctanos para agendar el procedimiento que necesites realizar. Contamos con regulacion para procedimientos ambolutarios??</div>
+    <div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3"> Contáctanos para agendar el procedimiento que necesites realizar. Contamos con regulacion sanitaria actualizada.</div>
     <img src="img/webp/neurodent_pabellon.webp" width="256" height="256" alt="" data-aos="fade">
   </blockquote>
 </div>
@@ -264,7 +269,7 @@
     <h2 class="display-6 mb-5">Agenda una consulta médica</h2>
   </div>
   <div class="col-12">
-    <a href="#" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Contactanos</a>
+    <a href="https://wa.me/56981691619" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Contactanos</a>
   </div>
 </div>
 
@@ -287,7 +292,7 @@
     Avenida Estadio 1399<br>
     La Serena, Chile<br>
     <abbr title="Phone"></abbr>
-    numero
+    +56 9 8169 1619
   </address>
 </div>
 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
@@ -303,40 +308,24 @@
       <a class="nav-link link-secondary ps-0" href="#numbers">¿Por qué Neurodent?</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Contacto</a>
+      <a class="nav-link link-secondary ps-0" href="https://wa.me/56981691619">Contacto</a>
     </li>
   </ul>
 </div>
 <div class="col-12 col-lg-6 col-xl-3 border-end p-5">
-  <h3 class="h6 mb-3">Servicios</h3>
+  <h3 class="h6 mb-3">Especialistas</h3>
   <ul class="nav flex-column">
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Consulta Neurocirugía</a>
+      <a class="nav-link link-secondary ps-0" aria-current="page" href="drpavez.html">Dr. Alonso Pavez</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Consulta Periodoncia</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">Blanqueamiento??</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">blabllabla</a>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#">blabllabla</a>
+      <a class="nav-link link-secondary ps-0" href="dravasquez.html">Dra. Rossana Vásquez</a>
     </li>
   </ul>
 </div>
 <div class="col-12 col-lg-6 col-xl-3 p-5">
-  <h3 class="h6 mb-3">Subpages</h3>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="404.html">404 System Page</a>
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="register.html">Register System Page</a>
-            <a class="nav-link link-secondary ps-0" aria-current="page" href="content.html">Simple Text Content Page</a>
-    </li>
-  </ul>
+  <img src="img/neurodent_logo.jpg" alt="Neurodent Logo" width="128" height="128" class="d-inline-block align-text-top">
+  
 </div>
 </div>
 </div>
